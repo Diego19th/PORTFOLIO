@@ -1,0 +1,151 @@
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", 'Open Sans', Arial;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 20px;
+}
+h1 {
+    font-size: 40px;
+    line-height: 1;
+}
+h2 {
+    font-size: 45px;
+}
+h2, h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+
+a{
+    color: coral;
+    font-size: 20px;
+}
+a:hover {
+    text-decoration: none;
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+
+}
+.divider > section:last-of-type{
+    border: none;
+}
+header {
+    background-color: rgb(0, 120,240);
+    color: #f7fff7;
+}
+.projects {
+  background-image: url(/images/);
+  background-size: cover;
+}
+.projects a{
+    color: darkslateblue;
+}
+
+.projects a:hover{
+    color: coral;
+}
+.projects .btn{
+    color: #f7fff7;
+    background-color: darkblue;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects .btn:hover{
+    color: darkblue;
+    background-color: rgba(47, 48, 97, .8);
+}
+.project-item{
+    overflow: hidden;
+}
+.project-item h3{
+    margin-top: 0px;
+}
+.work-experience {
+    background-color: #a1c6d7;
+}
+
+.education{
+    background-image: url(/images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom left;
+    padding-bottom: 100px;
+}
+.education p{
+    width: 60%;
+}
+.education img{
+    width: 300px;
+}
+footer{
+    background-color: #a0f;
+    color: #f7fff7;
+}
+.contact-list{
+    list-style: none;
+    padding: 0;
+}
+.contact-list a{
+    text-decoration: none;
+    padding: 15px;
+}
+.contact-list a:hover{
+    color: #fff;
+}
+/*Responsive*/
+@media screen and (min-width: 750px) {
+    .project-item img{
+        float: left;
+        margin-right: 20px;
+    }
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 15px;
+    }
+    .contact-list{
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer, header{
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.8;
+    }
+    h2{
+        line-height: 1;
+    }
+    
+}
